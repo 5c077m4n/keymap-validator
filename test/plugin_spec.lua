@@ -1,8 +1,8 @@
-local example = require('nvim-plugin-template').example
+local keymap_validator = require('keymap-validator')
 
 describe('neovim plugin', function()
   it('work as expect', function()
-    local result = example()
+    local result = keymap_validator.validate()
     assert.is_true(result)
   end)
 end)
